@@ -2,4 +2,4 @@
 
 hej med dig
 
-![alt text](http://github.com/sainsh/ReadmeEditor/imageOfProject.png)
+![alt text](https://github.com/sainsh/ReadmeEditor/blob/master/imageOfProject.png)
