@@ -24,7 +24,7 @@ public class Controller {
         try {
             Scanner input = new Scanner(readMe);
             while (input.hasNext()){
-                textArea.appendText(input.next());
+                textArea.appendText(input.nextLine() +"\n");
 
             }
 
@@ -36,10 +36,11 @@ public class Controller {
 
     public void onSaveBTNClick(ActionEvent actionEvent) {
 
-        try{
+        try {
             PrintWriter output = new PrintWriter(readMe);
-
-            output.println(textArea.getText());
+            for(String line : textArea.getText().split("\\n")){
+            output.println(line);
+        }
             output.close();
             textArea.clear();
 
