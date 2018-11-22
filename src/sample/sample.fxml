@@ -16,8 +16,8 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnSpan="2" />
+      <TextArea fx:id="textArea" prefHeight="300.0" prefWidth="400.0" wrapText="true" GridPane.columnSpan="2" />
       <Button fx:id="loadBTN" mnemonicParsing="false" onAction="#onLoadBTNClick" text="Indlæs" GridPane.rowIndex="1" />
-      <Button fx:id="saveBTN" mnemonicParsing="false" onAction="#onSaveBTNClick" text="Gem" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button fx:id="saveBTN" mnemonicParsing="false" onAction="#onSaveBTNClick" text="Gem" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
    </children>
 </GridPane>
