@@ -6,8 +6,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="sample.Controller">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
@@ -17,7 +16,7 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="2" />
+      <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnSpan="2" />
       <Button fx:id="loadBTN" mnemonicParsing="false" onAction="#onLoadBTNClick" text="Indlæs" GridPane.rowIndex="1" />
       <Button fx:id="saveBTN" mnemonicParsing="false" onAction="#onSaveBTNClick" text="Gem" GridPane.columnIndex="1" GridPane.rowIndex="1" />
    </children>
