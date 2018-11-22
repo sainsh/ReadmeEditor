@@ -15,18 +15,16 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
 
         File readMe = new File("README.md");
-        if(readMe.exists()) {
-
-            Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-            primaryStage.setTitle("Hello World");
-            primaryStage.setScene(new Scene(root, 500, 400));
-            primaryStage.show();
-        }
-        else{
+        if(!readMe.exists()) {
             PrintWriter writer = new PrintWriter(readMe);
             writer.close();
-            System.exit(0);
+
         }
+
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        primaryStage.setTitle("Hello World");
+        primaryStage.setScene(new Scene(root, 500, 400));
+        primaryStage.show();
     }
 
 
